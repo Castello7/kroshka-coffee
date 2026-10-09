@@ -1,0 +1,33 @@
+/* Coffee menu first; the barista's receipt is the interactive focal point. */
+:root{--ink:#243f35;--cream:#faf8f2;--coffee:#705b46}
+.hero{padding:64px 0 72px;gap:64px}.hero-visual{height:540px}
+.hero h1{font-size:clamp(48px,5vw,70px);letter-spacing:-2.2px}
+.hero .intro{max-width:420px}.quiet-link{min-height:44px;display:inline-flex;align-items:center}
+.menu-section{padding:72px 0 84px}.menu-layout{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:72px}
+.menu-main{min-width:0}.menu-item{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto 44px;gap:16px;align-items:start;padding:22px 0}
+.menu-item h3{font-size:18px;line-height:1.45}.menu-item p{max-width:360px;line-height:1.7}
+.menu-item>span{padding-top:1px;font-variant-numeric:tabular-nums;line-height:1.7;font-size:16px}
+.drink-info{width:44px;height:44px;min-height:44px;display:grid;place-items:center;margin-top:-7px;text-decoration:none;border-radius:50%;padding:0}
+.drink-info svg{width:23px;height:23px}.drink-info:hover{background:var(--white)}
+.menu-feature img{height:350px}.menu-feature{padding-top:8px}.menu-item.is-recommended{border-radius:3px}
+.finder-section{padding:76px 0 84px}.finder-layout{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:72px}
+.finder-heading{margin-bottom:36px}.finder-form legend{margin-bottom:12px}.finder-form fieldset{margin-bottom:25px}
+.choice-grid label>span{position:relative;padding-right:42px;border-radius:5px}
+.choice-grid label>span::after{content:'';position:absolute;right:16px;top:50%;width:14px;height:14px;border:1px solid #9aaf9f;border-radius:50%;transform:translateY(-50%)}
+.choice-grid input:checked+span::after{background:#243f35;border-color:#243f35;box-shadow:inset 0 0 0 3px #f0f1e6}
+.coffee-ticket{padding:30px 32px 34px}.ticket-extra{margin:-7px 0 15px;font-size:12px;line-height:1.7;color:var(--muted)}
+.finder-result-link{display:none}.about-section{padding:76px 0}.about-layout{gap:72px}.about-copy>p:not(.eyebrow){max-width:440px}
+.visit-section{display:flex;align-items:center;justify-content:space-between;gap:48px;padding:76px 0 82px}
+.visit-section h2{font-size:clamp(40px,4.4vw,62px)}.visit-actions{display:flex;flex-direction:column;align-items:flex-start;gap:15px;min-width:205px}
+.visit-actions .button{min-width:205px}.visit-actions .quiet-link{margin-left:25px}.footer-bottom{line-height:1.7}
+html[data-theme=dark] .choice-grid input:checked+span::after{background:#20342a;box-shadow:inset 0 0 0 3px #dce3d4}
+@media(min-width:1101px){.coffee-ticket{position:sticky;top:28px}.menu-feature{position:sticky;top:28px}}
+@media(max-width:1100px){.hero{gap:40px}.hero-visual{height:490px}.menu-layout,.finder-layout,.about-layout{gap:40px}.menu-item{gap:10px}.menu-feature img{height:300px}.coffee-ticket{padding:27px}.header nav{margin-right:25px;gap:25px}.site-preferences{padding-left:20px;gap:8px}}
+@media(max-width:760px){.header nav{margin:0;gap:18px}.site-preferences{padding-left:0}.hero{padding:34px 0 48px;gap:30px}.hero h1{font-size:clamp(42px,9.7vw,64px);letter-spacing:-1.7px}.hero-visual{height:420px}.hero .intro{margin-bottom:24px}.menu-section{padding:48px 0 56px}.menu-layout{grid-template-columns:1fr;gap:32px}.section-heading{margin-bottom:24px}.section-heading>p{max-width:360px}.menu-tabs{gap:28px}.menu-item{gap:10px;padding:20px 0;grid-template-columns:minmax(0,1fr) auto 40px}.menu-item>span{font-size:14px}.menu-item h3{font-size:17px}.menu-item p{max-width:none;font-size:13px}.drink-info{width:40px;margin-right:-4px}.menu-feature img{height:280px}.menu-feature{padding:0}.finder-section{padding:52px 0 60px}.finder-layout{grid-template-columns:1fr;gap:28px}.finder-heading{margin-bottom:28px}.finder-result-link{display:flex;align-items:center;justify-content:space-between;min-height:48px;margin-top:20px;padding:12px 16px;border:1px solid #9aaf9f;border-radius:5px;font-size:14px;color:inherit}.finder-result-link:hover{background:#ffffff0c}.coffee-ticket{max-width:520px;scroll-margin-top:24px}.about-section{padding:52px 0}.about-layout{gap:30px;grid-template-columns:1fr}.about-image{height:360px}.visit-section{display:block;padding:52px 0 58px}.visit-section h2{font-size:46px}.visit-actions{margin-top:27px;flex-direction:row;align-items:center;gap:20px;flex-wrap:wrap}.visit-actions .button{min-width:0}.visit-actions .quiet-link{margin-left:0}.footer-top{gap:22px}}
+@media(max-width:430px){.hero-visual{height:380px}.menu-feature img{height:270px}.menu-feature{display:block}.menu-feature>div{padding-top:20px}.menu-item{grid-template-columns:minmax(0,1fr) auto;gap:5px 12px}.menu-item>span{font-size:14px}.drink-info{position:absolute;right:0;bottom:14px}.menu-item>div{padding-right:20px}.menu-item p{max-width:205px}.menu-item{min-height:114px}.menu-tabs button{min-height:48px}.menu-tabs{gap:24px}.about-image{height:320px}.coffee-ticket{padding:25px}.ticket-top>span:last-child{letter-spacing:.6px}.footer-bottom{flex-wrap:wrap;gap:8px}.language-trigger{min-width:66px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.button,.menu-tabs button,.menu-item,.choice-grid label>span,.drink-info,#theme-toggle{transition:none}}
+
+.drink-facts>div{grid-template-columns:110px minmax(0,1fr)}
+@media(max-width:430px){.drink-facts>div{grid-template-columns:90px minmax(0,1fr);gap:14px}}
+
+@media(max-width:430px){.header nav{display:grid;grid-template-columns:.7fr 1fr 1fr;gap:12px;align-items:stretch}.header nav a{display:flex;align-items:center;white-space:normal;min-width:0;min-height:40px;font-size:13px;line-height:1.5}.header nav a:after{bottom:1px}}

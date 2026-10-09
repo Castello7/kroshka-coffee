@@ -1,0 +1,24 @@
+/* Feedback follows user actions; it never blocks them. */
+.button{transition:background .22s,box-shadow .22s,transform .22s}
+.button:active{transform:translateY(1px) scale(.98);box-shadow:none}
+#theme-toggle:active{transform:scale(.88)}
+.choice-grid label>span{transition:background .22s,border-color .22s,color .22s,transform .18s}
+.choice-grid label:active>span{transform:scale(.985)}
+.menu-tabs button{position:relative;transition:color .22s,border-color .22s,transform .18s}
+.menu-tabs button:active{transform:translateY(2px)}
+.drink-info,.text-button{transition:color .2s,transform .18s}
+.drink-info:active,.text-button:active{transform:translateY(1px)}
+@keyframes dialog-arrive{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}
+@keyframes recommendation-update{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes choice-confirm{from{box-shadow:0 0 0 3px #dae4bb42}to{box-shadow:0 0 0 0 #dae4bb00}}
+@media(prefers-reduced-motion:no-preference){
+ #drink-dialog[open]{animation:dialog-arrive .28s cubic-bezier(.2,.65,.3,1) both}
+ #drink-dialog[open]::backdrop{animation:backdrop-arrive .25s ease both}
+ #coffee-result.is-updating{animation:recommendation-update .26s ease both}
+ .choice-grid input:checked+span{animation:choice-confirm .35s ease}
+}
+@media(prefers-reduced-motion:reduce){
+ .button:active,#theme-toggle:active,.choice-grid label:active>span,.menu-tabs button:active,.drink-info:active,.text-button:active{transform:none}
+ #drink-dialog,#drink-dialog::backdrop,#coffee-result,.choice-grid label>span{animation:none!important;transition:none!important}
+}
