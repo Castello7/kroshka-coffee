@@ -15,7 +15,7 @@ Design Club was a student-led web-design club at Secondary School No. 220. I fou
 | My club role | Founder |
 | Club period | March 1 – May 21, 2026 |
 | Attendance | Approximately 6–12 students per meeting; attendance varied |
-| Learning focus | UI/UX, frontend fundamentals, Figma and Lovable AI |
+| Learning focus | UI/UX, frontend fundamentals, Figma and other design platforms |
 | Club outcomes | Three completed student learning projects |
 | Current Kroshka website implementation and publication | October 2026 |
 
@@ -28,7 +28,7 @@ Club members learned for their own development and built personal learning proje
 - Defined the requested features: multilingual content, a dark theme, coffee recommendations and restrained motion.
 - Organized the project for publication on GitHub and GitHub Pages.
 
-The current implementation was developed with AI assistance using Codex. Figma and Lovable AI describe the club's learning activities; this repository contains HTML, CSS and vanilla JavaScript.
+The current implementation was developed with AI assistance using Codex. Figma and other design platforms describe the club's learning activities; this repository contains HTML, CSS and vanilla JavaScript.
 
 ## Website features
 
